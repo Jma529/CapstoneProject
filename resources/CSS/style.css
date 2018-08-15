@@ -1,0 +1,116 @@
+html {
+  font-size: 16;
+}
+body {
+  margin: 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Header */
+
+header {
+  display: inline-flex;
+  height: 64px;
+  position: fixed;
+  z-index: 1;
+  background-color: cadetblue;
+  color: white;
+  width: 100%;
+
+}
+.logo {
+  display: flex;
+  font-size: 1.25rem;
+  padding-left: 24px;
+  flex-grow: 1;
+  padding: 16px;
+  align-items: center;
+
+}
+.logo a {
+  text-align: center;
+}
+.logo img {
+  height: 46px;
+  position: relative;
+  padding-top: 10px;
+}
+
+header nav {
+  padding-right: 24px;
+
+}
+
+ nav span {
+   display: inline-block;
+   padding-right: 16px;
+ }
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  text-align: right;
+}
+
+nav span a {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  top: 64px;
+}
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+.row-one {
+  display: inline-flex;
+}
+.container-one {
+  display: inline-flex;
+  background-color: gray;
+  min-width: 100%;
+}
+img.banner{
+  max-width: 60%;
+  padding: 32px 24px;
+  height: 400px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#learn {
+  padding-right: 125px;
+  padding-left: 24px;
+}
+
+#button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 24px;
+}
+.container-two img {
+  width: 60%;
+}
+.row-two {
+  display: inline-flex;
+}
+.thumbnail img {
+  height: auto;
+  width: 35%;
+}

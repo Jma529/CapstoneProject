@@ -1,5 +1,6 @@
 html {
-  font-size: 16;
+  font-size: 16px;
+  color: #F2F2F2;
 }
 body {
   margin: 0;
@@ -9,17 +10,25 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+h1, h2, h3 {
+  font-family: 'Libre Franklin', sans-serif;
+}
 
+p, span, a, h5 {
+  font-family: 'Open Sans', sans-serif;
+}
 /* Header */
 
 header {
   display: inline-flex;
-  height: 64px;
+  height: 4rem;
   position: fixed;
   z-index: 1;
-  background-color: cadetblue;
-  color: white;
+  background-color: #46A3A2;
+  color: #F2F2F2;
   width: 100%;
+  opacity: .75;
+  border-bottom: 1px solid #F2F2F2;
 
 }
 .logo {
@@ -58,7 +67,7 @@ nav {
 }
 
 nav span a {
-  color: white;
+  color: #F2F2F2;
   text-decoration: none;
 }
 .content {
@@ -67,7 +76,7 @@ nav span a {
   width: 100%;
   flex-direction: column;
   position: relative;
-  top: 64px;
+  top: 4rem;
 }
 .rows {
   display: flex;
@@ -78,8 +87,11 @@ nav span a {
 }
 .container-one {
   display: inline-flex;
-  background-color: gray;
+  background-color: #7E91A8;
   min-width: 100%;
+  background: linear-gradient(to right bottom,#7E91A8, #0F459C);
+  border-bottom: 1px solid #F2F2F2;
+
 }
 img.banner{
   max-width: 60%;
@@ -90,27 +102,183 @@ img.banner{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+  color: #F2F2F2;
 
+}
+.text-content a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+.text-content a:hover {
+  color: black;
+  transition: color .25s ease-in;
+}
 #learn {
-  padding-right: 125px;
-  padding-left: 24px;
+  padding: 0 24px;
 }
 
 #button {
-  background-color: black;
-  color: white;
+  color: #F2F2F2;
   text-align: center;
   padding: 8px 0;
   margin-top: 24px;
+  border: 2.5px solid rgba(70, 163, 162, 0.75); /* border with opacity*/
+  cursor: pointer;
+
+}
+#button:hover {
+  background-color: #46A3A2;
+  font-size: 1.5rem;
+  transition: background-color 1s ease-out, font-size .75s linear;
+}
+
+#button:active {
+  transform:
+}
+.container-two {
+  width: 60%;
+  overflow: hidden;
 }
 .container-two img {
-  width: 60%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .row-two {
   display: inline-flex;
+  width: 100%;
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  background-color: #586575;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.container-three {
+  width: 40%;
+  padding-left: 2.5rem;
+}
+.thumbnail {
+  display: inline-flex;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 .thumbnail img {
+   width: 35%;
+   height: 35%;
+   padding-right: 2rem;
+}
+.thumbnail.text-content {
+  width: 65%;
+}
+.text-content p {
+  padding: 8px 0;
+  margin: 0;
+}
+#practice {
+  padding-bottom: 2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+#lecture {
+  background-color: #46A3A2;
+  padding: 1rem;
+}
+#campus {
+  background-color: #546070;
+  padding: 1rem;
+  background: linear-gradient(to right bottom,#7E91A8, #0F459C);
+}
+.container-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 72px;
+  margin: 0;
+}
+.courses img {
+  width: 300px;
   height: auto;
-  width: 35%;
+}
+.courses {
+  text-align: left;
+  padding: 16px;
+}
+.row-three {
+  text-align: center;
+  background: linear-gradient(to right bottom,#7E91A8, #0F459C);
+  border-bottom: 1px solid #f2f2f2;
+}
+.textbox {
+  background-color: #46A3A2;
+  padding: 32px;
+  height: 150px;
+
+}
+#blue {
+  background: linear-gradient(to right bottom,#7E91A8, #0F459C);
+}
+.textbox span {
+  padding: .5rem 0;
+  color: #F2F2F2;
+  text-decoration:underline;
+}
+.row-three h1 {
+  padding-top: 2rem;
+}
+.row-four {
+  background-color: #586575;
+  border-bottom: 1px solid #f2f2f2;
+}
+.content-four {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+
+}
+video {
+  width: 100%;
+}
+.container-five {
+  width: 60%;
+  height: auto;
+  padding-right: 24px;
+}
+.container-six {
+  width: 40%;
+  height: auto;
+  padding-left: 16px;
+}
+.row-four h1 {
+  text-align: center;
+}
+footer {
+    display: inline-flex;
+    height: 4rem;
+    z-index: 1;
+    background-color: cadetblue;
+    color: #F2F2F2;
+    width: 100%;
+    background-color: #46A3A2;
+    opacity: .75;
+}
+.copyright {
+  display: flex;
+  padding-left: 24px;
+  flex-grow: 1;
+  align-items: center;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+.urban {
+  padding-top: 24px;
+  padding-bottom: 8px;
 }
